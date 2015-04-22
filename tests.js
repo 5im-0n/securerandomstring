@@ -50,4 +50,11 @@ securerandomstring({length: 256}, function(sr) {
 	);
 });
 
+securerandomstring({length: 256, urlsafe: true}, function(sr) {
+	test('generate a urlsafe random string 256 chars long',
+		sr.length,
+		256
+	);
+});
+
 
