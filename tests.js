@@ -36,18 +36,18 @@ securerandomstring(function(sr) {
 	);
 });
 
-securerandomstring(function(sr) {
+securerandomstring({length: 1}, function(sr) {
 	test('generate a random string 1 char long',
 		sr.length,
 		1
 	);
-}, {length: 1});
+});
 
-securerandomstring(function(sr) {
+securerandomstring({length: 256}, function(sr) {
 	test('generate a random string 256 chars long',
 		sr.length,
 		256
 	);
-}, {length: 256});
+});
 
 
