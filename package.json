@@ -1,6 +1,6 @@
 {
-  "name": "securerandomstring",
-  "version": "0.0.3",
+  "name": "secure-random-string",
+  "version": "0.0.1",
   "description": "Generates a secure random string with a given length",
   "main": "lib/securerandomstring.js",
   "scripts": {

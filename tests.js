@@ -1,4 +1,4 @@
-var securerandomstring = require('./lib/securerandomstring.js');
+var srs = require('./lib/secure-random-string.js');
 
 
 //my awesome test framework
@@ -29,28 +29,28 @@ var test = function(name, what, ref, c) {
 
 
 //the actual tests
-securerandomstring(function(sr) {
+srs(function(sr) {
 	test('generate a random string 32 chars long',
 		sr.length,
 		32
 	);
 });
 
-securerandomstring({length: 1}, function(sr) {
+srs({length: 1}, function(sr) {
 	test('generate a random string 1 char long',
 		sr.length,
 		1
 	);
 });
 
-securerandomstring({length: 256}, function(sr) {
+srs({length: 256}, function(sr) {
 	test('generate a random string 256 chars long',
 		sr.length,
 		256
 	);
 });
 
-securerandomstring({length: 256, urlsafe: true}, function(sr) {
+srs({length: 256, urlsafe: true}, function(sr) {
 	test('generate a urlsafe random string 256 chars long',
 		sr.length,
 		256
