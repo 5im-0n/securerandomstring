@@ -1,6 +1,6 @@
 {
   "name": "secure-random-string",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Generates a secure random string with a given length",
   "main": "lib/secure-random-string.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "string"
   ],
   "author": "Simon Santoro",
+  "contributors": ["Mark Stosberg <mark@rideamigos.com>"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/S2-/securerandomstring/issues"
