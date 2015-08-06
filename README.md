@@ -38,6 +38,10 @@ srs({length: 256, urlsafe:true}, function(sr) {
 });
 ```
 
+## Error handling
+
+Will throw error if there is not enough accumulated entropy to generate cryptographically strong data. In other words, this without callback will not block even if all entropy sources are drained.
+
 ## Author
 
  [Simon Santoro](https://github.com/S2-)
