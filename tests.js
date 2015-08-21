@@ -28,7 +28,7 @@ var test = function(name, what, ref, c) {
 
 
 
-//the actual tests
+// async tests
 srs(function(sr) {
 	test('generate a random string 32 chars long',
 		sr.length,
@@ -58,3 +58,8 @@ srs({length: 256, urlsafe: true}, function(sr) {
 });
 
 
+// sync tests
+test('generate a random string 32 chars long (sync)', srs().length, 32);
+test('generate a random string 1 chars long (sync)', srs({length:1}).length, 1);
+test('generate a random string 256 chars long (sync)', srs({length:256}).length, 256);
+test('generate a urlsafe random string 256 chars long (sync)', srs({length:256, urlsafe:true}).length, 256);
