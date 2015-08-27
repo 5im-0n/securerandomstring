@@ -50,28 +50,15 @@ srs({length: 256}, function(err, sr) {
 	);
 });
 
-srs({length: 256}, function(err, sr) {
-	test('generate a urlsafe random string 256 chars long',
-		sr.length,
-		256
-	);
-});
-
 
 // sync tests
 test('generate a random string 32 chars long (sync)', srs().length, 32);
 test('generate a random string 1 chars long (sync)', srs({length:1}).length, 1);
 test('generate a random string 256 chars long (sync)', srs({length:256}).length, 256);
-test('generate a urlsafe random string 256 chars long (sync)', srs({length:256}).length, 256);
 
-//when generating, the default should be urlsafe
+
 //in 2000 chars there should be at least one substitution
-test('check that the random string is urlsafe by default', (function() {
+test('check that the random string is urlsafe', (function() {
 	var s = srs({length: 2000});
 	return s.indexOf('+') + s.indexOf('/') === -2;
-})(), true);
-
-test('check that the useless urlsafe: false option works', (function() {
-	var s = srs({length: 2000, urlsafe: false});
-	return s.indexOf('_') + s.indexOf('-') === -2;
 })(), true);

@@ -21,19 +21,16 @@ srs(function(err, sr) {
 
 ```
 
-### Options: length, urlsafe
+### Options: length
 
 Optionally, you can specify a 'length' option to specify a length.
 
-When 'urlsafe' is true (the default), potential `+` and `/` characters are replaced respectively with `-` and `_`.
-This is a valid [base64url](https://en.wikipedia.org/wiki/Base64) string.
-
 ```javascript
 // sync
-var result = srs({length: 256, urlsafe:true});
+var result = srs({length: 256});
 
 // async
-srs({length: 256, urlsafe:true}, function(err, sr) {
+srs({length: 256}, function(err, sr) {
 	console.log(sr);
 });
 ```
