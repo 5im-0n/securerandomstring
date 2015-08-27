@@ -15,7 +15,7 @@ var srs = require('secure-random-string');
 var result = srs();
 
 // Async
-srs(function(sr) {
+srs(function(err,sr) {
 	console.log(sr);
 });
 
@@ -40,7 +40,9 @@ srs({length: 256, urlsafe:true}, function(sr) {
 
 ## Error handling
 
-Will throw error if there is not enough accumulated entropy to generate cryptographically strong data. In other words, this without callback will not block even if all entropy sources are drained.
+
+An error is possible if there is not enough accumulated entropy to generate cryptographically strong data. In other words, this will not block even if all entropy sources are drained. Note that the sync API throws an exception, while
+the async API returns the error to the callback.
 
 ## Author
 

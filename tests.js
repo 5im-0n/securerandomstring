@@ -29,28 +29,28 @@ var test = function(name, what, ref, c) {
 
 
 // async tests
-srs(function(sr) {
+srs(function(err,sr) {
 	test('generate a random string 32 chars long',
 		sr.length,
 		32
 	);
 });
 
-srs({length: 1}, function(sr) {
+srs({length: 1}, function(err,sr) {
 	test('generate a random string 1 char long',
 		sr.length,
 		1
 	);
 });
 
-srs({length: 256}, function(sr) {
+srs({length: 256}, function(err,sr) {
 	test('generate a random string 256 chars long',
 		sr.length,
 		256
 	);
 });
 
-srs({length: 256, urlsafe: true}, function(sr) {
+srs({length: 256, urlsafe: true}, function(err,sr) {
 	test('generate a urlsafe random string 256 chars long',
 		sr.length,
 		256
