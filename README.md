@@ -25,8 +25,8 @@ srs(function(err, sr) {
 
 Optionally, you can specify a 'length' option to specify a length.
 
-The 'urlsafe' option replaces a potential `+` character with `-` and the `/` character
-with `_`, created a valid [base64url](https://en.wikipedia.org/wiki/Base64) format string.
+When 'urlsafe' is true (the default), potential `+` and `/` characters are replaced respectively with `-` and `_`.
+This is a valid [base64url](https://en.wikipedia.org/wiki/Base64) string.
 
 ```javascript
 // sync
