@@ -15,7 +15,7 @@ var srs = require('secure-random-string');
 var result = srs();
 
 // Async
-srs(function(err,sr) {
+srs(function(err, sr) {
 	console.log(sr);
 });
 
@@ -33,7 +33,7 @@ with `_`, created a valid [base64url](https://en.wikipedia.org/wiki/Base64) form
 var result = srs({length: 256, urlsafe:true});
 
 // async
-srs({length: 256, urlsafe:true}, function(sr) {
+srs({length: 256, urlsafe:true}, function(err, sr) {
 	console.log(sr);
 });
 ```
