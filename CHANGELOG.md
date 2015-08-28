@@ -15,3 +15,5 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Async API now follows the Node.js convention of returning an error as the first argument
   to the callback. The error might be populated if the system runs out of entropy. (#2, @markstos)
+
+- `urlsafe` option was removed. All strings are URL-safe now. (#4, @S2-, @markstos)
