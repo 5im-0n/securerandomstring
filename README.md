@@ -64,4 +64,3 @@ the async API returns the error to the callback.
 ## License
 
 [MIT](https://github.com/aheckmann/node-ses/blob/master/LICENSE)
-
