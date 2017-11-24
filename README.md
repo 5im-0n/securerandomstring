@@ -34,7 +34,19 @@ srs({length: 256}, function(err, sr) {
 	console.log(sr);
 });
 ```
+### Options: alphabetic
 
+Optionally, you can specify a 'alphabetic' option to get a alphabetical chars only.
+
+```javascript
+// sync
+var result = srs({alphabetic: true});
+
+// async
+srs({alphabetic: true}, function(err, sr) {
+	console.log(sr);
+});
+```
 ## Error handling
 
 
