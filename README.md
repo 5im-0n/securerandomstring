@@ -60,6 +60,7 @@ the async API returns the error to the callback.
 ## Contributors
 
  [Mark Stosberg](https://github.com/markstos)
+ [Sandro Gomez](https://github.com/mrsangrin)
 
 ## License
 
