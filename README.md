@@ -34,16 +34,16 @@ srs({length: 256}, function(err, sr) {
 	console.log(sr);
 });
 ```
-### Options: alphabetic
+### Options: alphanumeric
 
-Optionally, you can specify a 'alphabetic' option to get a alphabetical chars only.
+Optionally, you can specify a 'alphanumeric' option to get a alphanumerical chars only.
 
 ```javascript
 // sync
-var result = srs({alphabetic: true});
+var result = srs({alphanumeric: true});
 
 // async
-srs({alphabetic: true}, function(err, sr) {
+srs({alphanumeric: true}, function(err, sr) {
 	console.log(sr);
 });
 ```
