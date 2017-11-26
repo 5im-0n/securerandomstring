@@ -56,6 +56,14 @@ srs({alphanumeric: true}, function(err, sr) {;
 		true
 	);
 });
+
+srs({alphanumeric: true, length: 40}, function(err, sr) {;
+	test('Must contain alphanumeric only and be 40 chars long',
+		sr.match(/^[a-zA-Z0-9_]*$/g)[0] === sr && sr.length === 40,
+		true
+	);
+});
+
 // sync tests
 test('generate a random string 32 chars long (sync)', srs().length, 32);
 test('generate a random string 1 chars long (sync)', srs({length: 1}).length, 1);
