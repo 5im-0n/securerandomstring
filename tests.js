@@ -50,7 +50,12 @@ srs({length: 256}, function(err, sr) {
 	);
 });
 
-
+srs({alphanumeric: true}, function(err, sr) {;
+	test('Must contain alphanumeric only',
+		sr.match(/^[a-zA-Z0-9_]*$/g)[0] === sr,
+		true
+	);
+});
 // sync tests
 test('generate a random string 32 chars long (sync)', srs().length, 32);
 test('generate a random string 1 chars long (sync)', srs({length: 1}).length, 1);
