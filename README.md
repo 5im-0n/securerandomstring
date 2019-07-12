@@ -8,7 +8,9 @@ Node.js module that generates a cryptographically secure random string with a gi
 var srs = require('secure-random-string');
 ```
 
-### Default behavior: Generate a random string 32 characters long.
+### Default behavior: Generate a random Base64 encoded string 32 characters long.
+
+This may include alphanumeric characters as well as the following characters: +, /, =.
 
 ```javascript
 // Sync
@@ -64,4 +66,4 @@ the async API returns the error to the callback.
 
 ## License
 
-[MIT](https://github.com/aheckmann/node-ses/blob/master/LICENSE)
+[MIT](https://opensource.org/licenses/MIT)
