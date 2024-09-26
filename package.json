@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/S2-/securerandomstring.git"
+    "url": "https://github.com/5im-0n/securerandomstring.git"
   },
   "keywords": [
     "crypto",
@@ -24,7 +24,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/S2-/securerandomstring/issues"
+    "url": "https://github.com/5im-0n/securerandomstring/issues"
   },
-  "homepage": "https://github.com/S2-/securerandomstring"
+  "homepage": "https://github.com/5im-0n/securerandomstring"
 }
