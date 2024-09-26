@@ -4,6 +4,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.4] 2024-09-26
+
+## Changes
+
+- In previous versions, if there was not enough entropy on the system, `securerandomstring` would throw an exception. Now it will retry to generate a random string until it succeeds, or the call stack becomes full.
+
 ## [1.1.0] 2017-12-26
 
 ### New Features
