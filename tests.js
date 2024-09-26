@@ -68,6 +68,7 @@ srs({alphanumeric: true, length: 40}, function(err, sr) {;
 test('generate a random string 32 chars long (sync)', srs().length, 32);
 test('generate a random string 1 chars long (sync)', srs({length: 1}).length, 1);
 test('generate a random string 256 chars long (sync)', srs({length: 256}).length, 256);
+test('generate a random string 10 chars long (sync)', srs({length: 10}).length, 10);
 
 
 //in 2000 chars there should be at least one substitution
